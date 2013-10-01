@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bluebeam Framework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+      <!-- Le fav and touch icons -->
+      <link rel="shortcut icon" href="ico/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    </head>
+
+    <body>
+
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner navbar-bluebeam bg-dark-gradient">
+          <div class="container">
+            <a class="btn btn-navbar btn-inverse" data-toggle="collapse" data-target=".nav-collapse">
+              <i class="icon-menu delta"></i>
+            </a>
+            <a class="brand" href="index.html"><i class="icon-icon-channel-bluebeam-logo"></i></a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="atoms.html">Atoms</a></li>
+                <li><a class="active" href="molecules.html">Molecules</a></li>
+                <li><a href="organisms.html">Organisms</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div><!--  Navbar end -->
+      
+        <div class="hero-unit hero-unit-gradient">
+          <h1>Molecules</h1>
+          <p>Elements that are a little more complexed than Atoms. These usually combine 2-3 Atom elements but are still fairly abstract.</p>
+        </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+              <ul data-spy="affix" data-offset-top="235" class="nav nav-tabs nav-stacked docs-sidebar" id="navbar">
+                <li><a href="#grid">Grid</i></a></li>
+                <li><a href="#media-elements">Media Elements</i></a>
+                  <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#media-object">Media Object</a></li>
+                    <li><a href="#media-block">Media Block</a></li>
+                  </ul>
+                </li>
+                <li><a href="#hero-element">Hero Element</i></a></li>
+                <li><a href="molecules.html#gallery">Gallery</i></a></li>
+              </ul>
+              <p></p>
+           </div>
+          <div class="span9">
+            <div class="page-header" id="grid">
+              <h1>Grid</h1>
+            </div>
+            <pre>
+&lt;div class="row"&gt;
+  &lt;div class="span6"&gt;
+    ... Content goes here ...
+  &lt;/div&gt;
+  &lt;div class="span6"&gt;
+    ... Content goes here ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <div class="row-fluid">
+              <div class="span1">
+                <div class="well">
+                  <p>1</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>2</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>3</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>4</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>5</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>6</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>7</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>8</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>9</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>11</p>
+                </div>
+              </div>
+              <div class="span1">
+                <div class="well">
+                  <p>12</p>
+                </div>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span4">
+                <div class="well">
+                  <p>Third</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="well">
+                  <p>Third</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="well">
+                  <p>Third</p>
+                </div>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span6">
+                <div class="well">
+                  <p>Half</p>
+                </div>
+              </div>
+              <div class="span6">
+                <div class="well">
+                  <p>Half</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="subheading" id="offset">Offset Columns</h2>
+            <p>We can create whitespace, center align columns or manipulate them however we want by using the "offset" class.</p>
+<pre>
+&lt;div class="row"&gt;
+  &lt;div class="span4 offset3"&gt;
+...
+  &lt;/div&gt;
+  &lt;div class="span4 offset1"&gt;
+...
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <div class="row-fluid">
+              <div class="span4 offset3">
+                <div class="well">
+                  <p>Third offset by 3</p>
+                </div>
+              </div>
+              <div class="span4 offset1">
+                <div class="well">
+                  <p>Third offset by 1</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="subheading" id="nesting">Nesting Columns</h2>
+            <p>Nesting columns is easy, you can add a "row" inside another "row" or use "row-fluid" fluid to break up the section into twelve smaller sections.</p>
+<pre>
+&lt;div class="span4"&gt;
+    &lt;div class="row-fluid"&gt;
+      &lt;div class="span6"&gt;
+      ...
+      &lt;/div&gt;
+      &lt;div class="span6"&gt;
+      ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <div class="row-fluid">
+              <div class="span4">
+                <div class="well">
+                  <div class="row-fluid">
+                    <div class="span6">
+                      <div class="well">
+                        <p>Half</p>
+                      </div>
+                    </div>
+                    <div class="span6">
+                      <div class="well">
+                        <p>Half</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span8">
+                <div class="well">
+                  <div class="row-fluid">
+                    <div class="span4">
+                      <div class="well">
+                        <p>Third</p>
+                      </div>
+                    </div>
+                    <div class="span4">
+                      <div class="well">
+                        <p>Third</p>
+                      </div>
+                    </div>
+                    <div class="span4">
+                      <div class="well">
+                        <p>Third</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="subheading" id="fluid-fixed">Fluid or fixed width rows</h2>
+            <p>There are two different grid systems. One based on fixed width grid system of 12 columns per parent row(Full length row). The second grid system is based on the width of the container. So you can have 12 columns in a 3 column container.</p>
+            <h3 class="subheading">Fixed</h3>
+            <p>Span 9</p>
+            <div class="row">
+              <div class="span3">
+                <div class="well">
+                  <p>Span 3</p>
+                </div>
+              </div>
+              <div class="span3">
+                <div class="well">
+                  <p>Span 3</p>
+                </div>
+              </div>
+              <div class="span3">
+                <div class="well">
+                  <p>Span 3</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="subheading">Fluid</h3>
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="well">
+                  <p>Span 12</p>
+                  <div class="row-fluid">
+                    <div class="span4">
+                      <div class="well">
+                        <p>Span 4</p>
+                      </div>
+                    </div>
+                    <div class="span4">
+                      <div class="well">
+                        <p>Span 4</p>
+                      </div>
+                    </div>
+                    <div class="span4">
+                      <div class="well">
+                        <p>Span 4</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-header" id="media-elements">
+              <h1>Media Elements</h1>
+            </div>
+              <div id="media-object">
+                <h2 class="subheading">Media Object</h2>
+                <p>Enter the <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media box</a>. This eleminates the need for hundreds of lines of code. "Featurette", "Productette" and "Iconette" can all be combined into this five line beauty. It is adaptive to it's surroundings (Container) and it's contents. It can also be styled with additional classes.</p>
+              </div>
+              <div class="media-group">
+                <div class="media">
+                  <a href="#" class="img">
+                    <img src="http://placehold.it/125">
+                  </a>
+                  <div class="bd">
+                    <h4>Media Box</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <a href="#" class="img">
+                    <img src="http://placehold.it/125">
+                  </a>
+                  <div class="bd">
+                    <h4>Media Box</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <a href="#" class="img">
+                    <img src="http://placehold.it/125">
+                  </a>
+                  <div class="bd">
+                    <h4>Media Box</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+              </div>
+              
+<pre>
+  &lt;div class="media"&gt;
+    &lt;div class="img"&gt;
+      &lt;img src="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="bd"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+              <div class="media-group">
+                <div class="media media-border">
+                  <a href="#" class="img">
+                    <img src="http://placehold.it/125">
+                  </a>
+                  <div class="bd">
+                    <h4>Light Border</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+                <div class="media media-border">
+                  <a href="#" class="img">
+                    <img src="http://placehold.it/125">
+                  </a>
+                  <div class="bd">
+                    <h4>Light Border</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+                <div class="media media-border">
+                  <a href="#" class="img">
+                    <img src="http://placehold.it/125">
+                  </a>
+                  <div class="bd">
+                    <h4>Light Border</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+                
+              </div>
+              
+<pre>
+  &lt;div class="media media-border"&gt;
+    ...
+  &lt;/div&gt;
+</pre>
+                <div class="media-group">
+                  <div class="media media-border-padding">
+                    <a href="#" class="img">
+                      <img src="http://placehold.it/125">
+                    </a>
+                    <div class="bd">
+                      <h4>Light Border w/ padding</h4>
+                      <p>This is where the content will go.</p>
+                    </div>
+                  </div>
+                  <div class="media media-border-padding">
+                    <a href="#" class="img">
+                      <img src="http://placehold.it/125">
+                    </a>
+                    <div class="bd">
+                      <h4>Light Border w/ padding</h4>
+                      <p>This is where the content will go.</p>
+                    </div>
+                  </div>
+                  <div class="media media-border-padding">
+                    <a href="#" class="img">
+                      <img src="http://placehold.it/125">
+                    </a>
+                    <div class="bd">
+                      <h4>Light Border w/ padding</h4>
+                      <p>This is where the content will go.</p>
+                    </div>
+                  </div>
+                </div>
+                
+<pre>
+  &lt;div class="media media-border-padding"&gt;
+    ...
+  &lt;/div&gt;
+</pre>
+                <div class="media-group">
+                  <div class="media blue-border-top">
+                    <a href="#">
+                      <div class="img">
+                        <img src="http://placehold.it/125">
+                      </div>
+                      <div class="bd">
+                        <h4>As a hyperlink</h4>
+                        <p>This is where the content will go.</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="media blue-border-top">
+                    <a href="#">
+                      <div class="img">
+                        <img src="http://placehold.it/125">
+                      </div>
+                      <div class="bd">
+                        <h4>As a hyperlink</h4>
+                        <p>This is where the content will go.</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="media blue-border-top">
+                    <a href="#">
+                      <div class="img">
+                        <img src="http://placehold.it/125">
+                      </div>
+                      <div class="bd">
+                        <h4>As a hyperlink</h4>
+                        <p>This is where the content will go.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+<pre>
+  &lt;div class="media blue-border-top"&gt;
+    ...
+  &lt;/div&gt;
+</pre>
+                <div class="media-group">
+                  <div class="media flush-margin">
+                    <a href="#" class="img">
+                      <img src="http://placehold.it/125">
+                    </a>
+                    <div class="bd">
+                      <h4>Media Object with no margin</h4>
+                      <p>This is where the content will go.</p>
+                    </div>
+                  </div>
+                  <div class="media flush-margin">
+                    <a href="#" class="img">
+                      <img src="http://placehold.it/125">
+                    </a>
+                    <div class="bd">
+                      <h4>Media Object with no margin</h4>
+                      <p>This is where the content will go.</p>
+                    </div>
+                  </div>
+                  <div class="media flush-margin">
+                    <a href="#" class="img">
+                      <img src="http://placehold.it/125">
+                    </a>
+                    <div class="bd">
+                      <h4>Media Object with no margin</h4>
+                      <p>This is where the content will go.</p>
+                    </div>
+                  </div>
+                </div>
+                
+<pre>
+  &lt;div class="media flush-margin"&gt;
+    ...
+  &lt;/div&gt;
+</pre>
+              <div class="span9">
+                <h3>Nestable</h3>
+                <p>Media boxes can be nested in eachother.</p>
+                <div class="media">
+                  <a href="#" class="img">
+                    <img src="http://placehold.it/125">
+                  </a>
+                  <div class="bd">
+                    <h4>Media Box</h4>
+                    <p>This is where the content will go.</p>
+                    <div class="media">
+                      <a href="#" class="img">
+                        <img src="http://placehold.it/125">
+                      </a>
+                      <div class="bd">
+                        <h4>Media Box</h4>
+                        <p>This is where the content will go.</p>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <a href="#" class="img">
+                        <img src="http://placehold.it/125">
+                      </a>
+                      <div class="bd">
+                        <h4>Media Box</h4>
+                        <p>This is where the content will go.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="media-object">
+                <h2 class="subheading">Media Block</h2>
+                <p>Standard media block with image and copy.</p>
+              </div>
+              <div class="media-group">
+                <div class="media-block">
+                    <img src="http://placehold.it/250">
+                    <h4>Media Box</h4>
+                    <p>This is where the content will go.</p>
+                </div>
+                <div class="media-block">
+                  <a href="#">
+                    <img src="http://placehold.it/250">
+                      <h4>Media Box as a hyperlink</h4>
+                      <p>This is where the content will go.</p>
+                  </a>
+                </div>
+                <div class="media-block media-border-padding">
+                    <img src="http://placehold.it/250">
+                    <h4>Media Box with Outline</h4>
+                    <p>This is where the content will go.</p>
+                </div>
+              </div>
+              
+<pre>
+  &lt;div class="media-block"&gt;
+    &lt;img src="..." /&gt;
+      ...
+  &lt;/div&gt;
+</pre>
+              <div class="page-header" id="hero-element">
+                <h1>Hero Element</h1>
+              </div>
+              <h3 class="subheading">Basic Hero Unit</h3>
+              <div class="hero-unit">
+                <h1>Heading</h1>
+                <p>Some body copy.</p>
+              </div>
+<pre>
+  &lt;div class="hero-unit"&gt;
+    ...
+  &lt;/div&gt;
+</pre>
+              <h3 class="subheading">Flush Hero Unit</h3>
+              <div class="hero-unit flush-padding">
+                <h1>Heading</h1>
+                <p>Some body copy.</p>
+              </div>
+<pre>
+  &lt;div class="hero-unit flush-padding"&gt;
+    ...
+  &lt;/div&gt;
+</pre>
+              <div class="page-header" id="gallery">
+                <h1>Gallery</h1>
+              </div>
+              <p>Simple gallery that can be as long or short as needed.</p>
+                <ul class="gallery">
+                  <li><a href="http://www.youtube.com/embed/ltMQZSLjLt8?autoplay=1" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                  <li><a href="img/glyphicons-halflings.png" class="boxer" rel="gallery"><img src="http://placehold.it/250" alt="Product Name" /></a></li>
+                </ul>
+<pre>
+&lt;ul class="gallery"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </div>
+          </div>
+          <hr>
+          <footer>
+            <p>&copy; Bluebeam 2013</p>
+          </footer>
+        </div><!-- /container -->
+
+        
+
+  
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.fs.boxer.js"></script>
+    <script>
+        $(".boxer").boxer();
+     </script>
+
+  </body>
+  </html>
